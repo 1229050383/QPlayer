@@ -6,6 +6,7 @@ from view.Test import Ui_MainWindow
 
 
 class QPlayer(QMainWindow):
+    '''fjskjieskj'''
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
