@@ -1,20 +1,19 @@
+# -*- coding: utf-8 -*-
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget
+
+from PySide6.QtWidgets import QApplication, QWidget, QMainWindow
+from view.Test import Ui_MainWindow
 
 
-def main():
-
-    app = QApplication(sys.argv)
-
-    w = QWidget()
-    w.resize(250, 200)
-    w.move(300, 300)
-
-    w.setWindowTitle('Simple')
-    w.show()
-
-    sys.exit(app.exec())
+class QPlayer(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
 
 
 if __name__ == '__main__':
-    main()
+    app = QApplication(sys.argv)
+    window = QPlayer()
+    window.show()
+    sys.exit(app.exec())
