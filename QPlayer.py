@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
 
-from PySide6.QtWidgets import QApplication, QWidget, QMainWindow
-from view.Test import Ui_MainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow
+from view.main_window.Test import Ui_MainWindow
 
 
 class QPlayer(QMainWindow):

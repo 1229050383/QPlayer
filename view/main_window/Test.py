@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QMainWindow, QMenuBar, QPushButton,
-    QSizePolicy, QStatusBar, QWidget)
+from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect)
+from PySide6.QtWidgets import (QMenuBar, QPushButton,
+                               QStatusBar, QWidget)
+
 
 class Ui_MainWindow(object):
     def setupUi(self, main):
@@ -32,10 +27,10 @@ class Ui_MainWindow(object):
         self.retranslateUi(main)
 
         QMetaObject.connectSlotsByName(main)
+
     # setupUi
 
     def retranslateUi(self, main):
         main.setWindowTitle(QCoreApplication.translate("main", u"QPlayer", None))
         self.pushButton.setText(QCoreApplication.translate("main", u"PushButton", None))
     # retranslateUi
-
