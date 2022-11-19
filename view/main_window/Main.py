@@ -5,7 +5,7 @@ from PySide6.QtWidgets import (QMenuBar, QPushButton,
                                QStatusBar, QWidget)
 
 
-class Ui_MainWindow(object):
+class Main(object):
     def setupUi(self, main):
         if not main.objectName():
             main.setObjectName(u"QPlayer")

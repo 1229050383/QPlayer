@@ -2,14 +2,14 @@
 import sys
 
 from PySide6.QtWidgets import QApplication, QMainWindow
-from view.main_window.Test import Ui_MainWindow
+from view.main_window.Main import Main
 
 
 class QPlayer(QMainWindow):
     '''223'''
     def __init__(self):
         super().__init__()
-        self.ui = Ui_MainWindow()
+        self.ui = Main()
         self.ui.setupUi(self)
 
 
